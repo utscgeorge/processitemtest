@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2021-01-05T07:40:46.134Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="14.1.8" etag="AD_f_I32aMzVmmFxeLte" type="github"><diagram id="Wb4A554nl5-XUiyaX7xR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-06T02:51:27.411Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="PhZqQHO_1_nwzKYTfx3O" version="14.1.8" type="github">
+  <diagram id="Wb4A554nl5-XUiyaX7xR" name="Page-1">
+    <mxGraphModel dx="650" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-1" value="C1下发流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="240" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SzJQRWa1_UhJgvLE8AeP-2" target="SzJQRWa1_UhJgvLE8AeP-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-2" value="下发频道" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="280" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SzJQRWa1_UhJgvLE8AeP-3" target="SzJQRWa1_UhJgvLE8AeP-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-3" value="1.拼接EPGFileset字符串&lt;br&gt;2.拼接频道列表信息&lt;br&gt;3.拼接livechannel.json信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-5" value="1.修改c1injectionstatus=3,c1status=0&lt;br&gt;2.生成c1的cms_send_event" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="450" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-8" value="sendjob定时任务:&lt;br&gt;1.轮询事件表,遍历priority=1的事件&lt;br&gt;1.生成cms_send_task&lt;br&gt;2.发送c1消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286.5" y="690" width="147" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SzJQRWa1_UhJgvLE8AeP-5" target="SzJQRWa1_UhJgvLE8AeP-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="560" as="sourcePoint" />
+            <mxPoint x="440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-10" value="下发节目单" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="280" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-11" value="校验流程(满足一条校验不通过):&lt;br&gt;1.对应频道c1status!=1&lt;br&gt;2.对应频道c1injectionstatus!=0&lt;br&gt;3.节目单的c1injectionstatus!=0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="489.66" y="300" as="sourcePoint" />
+            <mxPoint x="489.66" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="489.66" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="489.66" y="400" as="sourcePoint" />
+            <mxPoint x="489.66" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SzJQRWa1_UhJgvLE8AeP-14" target="SzJQRWa1_UhJgvLE8AeP-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-14" value="1.拼接EPGFileset字符串&lt;br&gt;2.拼接节目json信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="450" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-15" value="1.修改c1injectionstatus=3,c1status=0&lt;br&gt;2.生成c1的cms_send_event" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="402.5" y="554" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SzJQRWa1_UhJgvLE8AeP-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="SzJQRWa1_UhJgvLE8AeP-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="488.5" y="614" as="sourcePoint" />
+            <mxPoint x="646.75" y="864" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
