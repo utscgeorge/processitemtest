@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-25T09:59:35.922Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="bogBeEqXK6GhkYhgk-ap" version="14.9.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-25T10:01:19.418Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="37GJSUYbC3c1P8QEAfAK" version="14.9.9" type="github">
   <diagram id="lGbfy7U1lLRQi7NGqesD" name="Page-1">
     <mxGraphModel dx="942" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="pmouW7Oq6iBT3d15TTm1-2" value="uclouddispatcher" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pmouW7Oq6iBT3d15TTm1-5" value="vgs" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pmouW7Oq6iBT3d15TTm1-5" value="vgs" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" parent="1" vertex="1">
           <mxGeometry x="520" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pmouW7Oq6iBT3d15TTm1-7" value="C2接口下发频道&lt;br&gt;写log_sm表" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
